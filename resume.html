@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Kashish Dagar</title>
+    <meta name="description" content="Resume of Kashish Dagar.">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .download-btn-container {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .resume-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .resume-section-title {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .resume-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .resume-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .resume-item-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 0.2rem;
+        }
+
+        .resume-item-subtitle {
+            font-size: 0.95rem;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .resume-item-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        ul.resume-list {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        ul.resume-list li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Kashish<span>.</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="resume-container">
+            <h2 class="section-title">My Resume</h2>
+
+            <div class="download-btn-container">
+                <a href="kashish_resume.pdf" class="btn btn-primary" download>
+                    👉 Download Resume PDF
+                </a>
+            </div>
+
+            <div class="card">
+                <!-- Profile Summary -->
+                <div class="resume-section">
+                    <h3 class="resume-section-title">Profile Summary</h3>
+                    <p class="resume-item-desc">
+                        Focused on completing tasks efficiently, disciplined learner, active in technical events. Highly motivated to grow in the fields of Software Development and Artificial Intelligence.
+                    </p>
+                </div>
+
+                <!-- Objective -->
+                <div class="resume-section">
+                    <h3 class="resume-section-title">Objective</h3>
+                    <p class="resume-item-desc">
+                        To leverage my strong academic foundation in Computer Science and my passion for technology to secure a challenging role where I can contribute to innovative projects and continuously improve my problem-solving skills.
+                    </p>
+                </div>
+
+                <!-- Education -->
+                <div class="resume-section">
+                    <h3 class="resume-section-title">Education</h3>
+                    <div class="resume-item">
+                        <div class="resume-item-title">B.Tech Computer Science Engineering</div>
+                        <div class="resume-item-subtitle">Manav Rachna University • 2nd Semester</div>
+                        <div class="resume-item-desc">
+                            <strong>SGPA:</strong> 8.3<br>
+                            Relevant Coursework: Data Structures, Programming in C, Problem Solving
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extra-Curricular -->
+                <div class="resume-section">
+                    <h3 class="resume-section-title">Extra-Curricular Activities</h3>
+                    <ul class="resume-list">
+                        <li>IEEE Student Member</li>
+                        <li>Organized technical quiz events on campus</li>
+                        <li>Volunteer at CyCogn Technical Event</li>
+                        <li>Participated in Xtreme 19.0 programming competition</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

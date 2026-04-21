@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Kashish Dagar</title>
+    <meta name="description" content="Get in touch with Kashish Dagar.">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--card-border);
+            border-radius: 1rem;
+            transition: var(--transition);
+        }
+
+        .contact-card:hover {
+            background: rgba(59, 130, 246, 0.05);
+            transform: translateX(10px);
+            border-color: rgba(59, 130, 246, 0.3);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.2rem;
+        }
+
+        .contact-value {
+            font-size: 1.1rem;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+        
+        .contact-value a {
+            transition: color 0.3s;
+        }
+        
+        .contact-value a:hover {
+            color: var(--primary);
+        }
+
+        /* Form Styles */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-label {
+            font-size: 0.9rem;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        .form-input, .form-textarea {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--card-border);
+            border-radius: 0.5rem;
+            color: var(--text-main);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-input:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        @media (max-width: 992px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            .contact-card:hover {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Kashish<span>.</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section>
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <div class="contact-container">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value"><a href="tel:8383858844">8383858844</a></span>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value"><a href="mailto:kashish_dagar25@mru.ac.in">kashish_dagar25@mru.ac.in</a></span>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">🔗</div>
+                        <div class="contact-details">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value"><a href="https://www.linkedin.com/in/kashish-dagar-41a79a374" target="_blank" rel="noopener noreferrer">kashish-dagar-41a79a374</a></span>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">💻</div>
+                        <div class="contact-details">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value"><a href="https://github.com/kd482008/mru-ai-tools-2a" target="_blank" rel="noopener noreferrer">kd482008/mru-ai-tools-2a</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="card">
+                    <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for your message! This is a demo form.');">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Your Message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
