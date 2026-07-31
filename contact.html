@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,11 +68,11 @@
             color: var(--text-main);
             font-weight: 500;
         }
-        
+
         .contact-value a {
             transition: color 0.3s;
         }
-        
+
         .contact-value a:hover {
             color: var(--primary);
         }
@@ -95,7 +96,8 @@
             font-weight: 500;
         }
 
-        .form-input, .form-textarea {
+        .form-input,
+        .form-textarea {
             width: 100%;
             padding: 1rem;
             background: rgba(0, 0, 0, 0.2);
@@ -107,7 +109,8 @@
             transition: var(--transition);
         }
 
-        .form-input:focus, .form-textarea:focus {
+        .form-input:focus,
+        .form-textarea:focus {
             outline: none;
             border-color: var(--primary);
             box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
@@ -122,12 +125,14 @@
             .contact-container {
                 grid-template-columns: 1fr;
             }
+
             .contact-card:hover {
                 transform: translateY(-5px);
             }
         }
     </style>
 </head>
+
 <body>
     <div class="bg-glow"></div>
 
@@ -151,23 +156,16 @@
     <main class="container">
         <section>
             <h2 class="section-title">Get In Touch</h2>
-            
+
             <div class="contact-container">
                 <!-- Contact Info -->
                 <div class="contact-info">
                     <div class="contact-card">
-                        <div class="contact-icon">📱</div>
-                        <div class="contact-details">
-                            <span class="contact-label">Phone</span>
-                            <span class="contact-value"><a href="tel:8383858844">8383858844</a></span>
-                        </div>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-icon">📧</div>
+                        <div class="contact-icon">�</div>
                         <div class="contact-details">
                             <span class="contact-label">Email</span>
-                            <span class="contact-value"><a href="mailto:kashish_dagar25@mru.ac.in">kashish_dagar25@mru.ac.in</a></span>
+                            <span class="contact-value"><a
+                                    href="mailto:kashish_dagar25@mru.ac.in">kashish_dagar25@mru.ac.in</a></span>
                         </div>
                     </div>
 
@@ -175,7 +173,8 @@
                         <div class="contact-icon">🔗</div>
                         <div class="contact-details">
                             <span class="contact-label">LinkedIn</span>
-                            <span class="contact-value"><a href="https://www.linkedin.com/in/kashish-dagar-41a79a374" target="_blank" rel="noopener noreferrer">kashish-dagar-41a79a374</a></span>
+                            <span class="contact-value"><a href="https://www.linkedin.com/in/kashish-dagar-41a79a374"
+                                    target="_blank" rel="noopener noreferrer">kashish-dagar-41a79a374</a></span>
                         </div>
                     </div>
 
@@ -183,30 +182,44 @@
                         <div class="contact-icon">💻</div>
                         <div class="contact-details">
                             <span class="contact-label">GitHub</span>
-                            <span class="contact-value"><a href="https://github.com/kd482008/mru-ai-tools-2a" target="_blank" rel="noopener noreferrer">kd482008/mru-ai-tools-2a</a></span>
+                            <span class="contact-value"><a href="https://github.com/kd482008"
+                                    target="_blank" rel="noopener noreferrer">github.com/kd482008</a></span>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <span class="contact-label">Location</span>
+                            <span class="contact-value">Faridabad, Haryana, India</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Contact Form -->
                 <div class="card">
-                    <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for your message! This is a demo form.');">
+                    <form class="contact-form" action="#" method="POST"
+                        onsubmit="event.preventDefault(); alert('Thank you for your message! This is a demo form.');">
                         <div class="form-group">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Your Name"
+                                required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Your Email"
+                                required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="message" class="form-label">Message</label>
-                            <textarea id="message" name="message" class="form-textarea" placeholder="Your Message" required></textarea>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Your Message"
+                                required></textarea>
                         </div>
-                        
-                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send Message</button>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send
+                            Message</button>
                     </form>
                 </div>
             </div>
@@ -215,4 +228,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

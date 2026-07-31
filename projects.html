@@ -21,6 +21,31 @@
             height: 100%;
             position: relative;
             overflow: hidden;
+            gap: 1rem;
+        }
+
+        .project-actions {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.65rem 1rem;
+            border-radius: 999px;
+            border: 1px solid rgba(59, 130, 246, 0.35);
+            color: var(--text-main);
+            background: rgba(59, 130, 246, 0.08);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .project-link:hover {
+            background: rgba(59, 130, 246, 0.18);
+            transform: translateY(-2px);
         }
 
         .project-card::before {
@@ -109,45 +134,47 @@
             <h2 class="section-title">My Projects</h2>
             
             <div class="projects-grid">
-                <!-- Project 1 -->
                 <div class="card project-card">
-                    <h3 class="project-title">Personal Portfolio Website</h3>
-                    <p class="project-desc">A fully responsive, multi-page personal portfolio designed to showcase my skills, projects, and educational background.</p>
+                    <div class="project-status">Ongoing</div>
+                    <h3 class="project-title">Amazon E-Commerce Website</h3>
+                    <p class="project-desc">
+                        Developing an Amazon-inspired e-commerce website. Implemented shopping cart and checkout functionality, used Local Storage for persistent cart management, added delivery option selection, implemented delete functionality, and used JavaScript modules, DOM manipulation and event handling.
+                    </p>
                     <div class="project-tech">
                         <span class="tech-tag">HTML</span>
                         <span class="tech-tag">CSS</span>
                         <span class="tech-tag">JavaScript</span>
                     </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="card project-card">
-                    <h3 class="project-title">Movie Recommendation System</h3>
-                    <p class="project-desc">A system that suggests movies based on basic machine learning logic using dataset filtering to help users find new content.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Data Handling</span>
+                    <div class="project-actions">
+                        <a class="project-link" href="https://github.com/kd482008" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="card project-card">
-                    <h3 class="project-title">Random Quote Generator</h3>
-                    <p class="project-desc">A web application that fetches and displays random motivational quotes, demonstrating DOM manipulation capabilities.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">DOM Manipulation</span>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
                 <div class="card project-card">
                     <div class="project-status">Ongoing</div>
-                    <h3 class="project-title">Movie Rating Analyzer</h3>
-                    <p class="project-desc">An active project focused on analyzing movie dataset ratings to detect trends and patterns across different genres.</p>
+                    <h3 class="project-title">SpendSmart – Personal Expense Tracker</h3>
+                    <p class="project-desc">
+                        Developing an expense tracking application with Local Storage for saving transactions, responsive UI, and real-time balance calculation.
+                    </p>
                     <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Data Analysis</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-actions">
+                        <a class="project-link" href="https://github.com/kd482008" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <h3 class="project-title">Personal Portfolio Website</h3>
+                    <p class="project-desc">
+                        Designed and developed a responsive portfolio website that showcases projects, technical skills, certifications, and experience.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
                     </div>
                 </div>
             </div>
